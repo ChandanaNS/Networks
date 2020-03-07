@@ -1,9 +1,11 @@
 #author: chandana
+
 #Topic: End to end IoT network system using AWS
 
-To publish a topic from any device like a PC to an AWS IoT broker, a script has been written using the AWSIoTMQTTClient package.
+To subscribe or publish a topic from any instance to an AWS IoT broker, AWS IOT SDK package has been used.
+A script has been written using the AWSIoTMQTTClient package.
 
-The package is available in https://github.com/aws/aws-iot-device-sdk-python
+The complete package is available at https://github.com/aws/aws-iot-device-sdk-python
 
 In the script MQTTClient instance has been created and an endpoint has been configured (Endpoint is available in AWS IoT, setting) with standard MQTT port number 8883. 
 
