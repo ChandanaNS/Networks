@@ -20,13 +20,13 @@ myMQTTClient.configureOfflinePublishQueueing(-1)  # Infinite offline Publish que
 myMQTTClient.configureDrainingFrequency(2)  # Draining: 2 Hz
 myMQTTClient.configureConnectDisconnectTimeout(10)  # 10 sec
 myMQTTClient.configureMQTTOperationTimeout(5)  # 5 sec
-def customCallback(client, userdata, message):
-    print(message)
-    print(message.payload)
-    file = open("data.txt", 'a')
-    file.write(message.payload)
-    file.write("\n")
-    file.close()
+# def customCallback(client, userdata, message):
+#     print(message)
+#     print(message.payload)
+#     file = open("data.txt", 'a')
+#     file.write(message.payload)
+#     file.write("\n")
+#     file.close()
 
 myMQTTClient.connect()
 while(1):
